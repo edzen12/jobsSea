@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="" lang="zxx">
+<head>
+<meta name="author" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>:: Escort - Job Portal HTML Template ::</title>
+
+<!-- Favicon Icon -->
+<link rel="shortcut icon" href="assets/img/favicon.png" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/css/bootstrap-select.min.css' %}">
+<link href="{% static 'assets/plugins/icons/css/icons.css' %}" rel="stylesheet">
+<link href="{% static 'assets/plugins/animate/animate.css' %}" rel="stylesheet">
+<link href="{% static 'assets/plugins/bootstrap/css/bootsnav.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/plugins/nice-select/css/nice-select.css' %}">
+<link href="{% static 'assets/plugins/aos-master/aos.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet"> 
+</head>
+<body class="utf_skin_area">
+<div class="page_preloader"></div>
+
+
+{% include "header.html" %}
+
+{% block content %}
+{% endblock content %}
+
+{% include "footer.html" %}
+
+
+
+<div><a href="index.html#" class="scrollup">Scroll</a></div>
+
+<!-- Jquery js--> 
+<script src="{% static 'assets/js/jquery.min.js' %}"></script> 
+<script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script> 
+<script src="{% static 'assets/plugins/bootstrap/js/bootsnav.js' %}"></script> 
+<script src="{% static 'assets/js/viewportchecker.js' %}"></script> 
+<script src="{% static 'assets/js/slick.js' %}"></script> 
+<script src="{% static 'assets/plugins/bootstrap/js/wysihtml5-0.3.0.js' %}"></script> 
+<script src="{% static 'assets/plugins/bootstrap/js/bootstrap-wysihtml5.js' %}"></script> 
+<script src="{% static 'assets/plugins/aos-master/aos.js' %}"></script> 
+<script src="{% static 'assets/plugins/nice-select/js/jquery.nice-select.min.js' %}"></script> 
+<script src="{% static 'assets/js/custom.js' %}"></script> 
+<script>
+	$(window).load(function() {
+	  $(".page_preloader").fadeOut("slow");;
+	});
+	AOS.init();
+</script>
+</body>
+</html>
